@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>task-1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul {
+      display: flex;
+      position: fixed;
+      height: 15vh;
+      width: 100%;
+      background: linear-gradient(black, lightgrey);
+      justify-content: space-evenly;
+      align-items: center;
+      z-index: 1;
+    }
+
+    nav ul li {
+      color: rgb(248, 244, 247);
+      list-style-type: none;
+    }
+
+    ul li:hover {
+      color: rgb(242, 67, 9);
+      cursor: pointer;
+    }
+
+    .em {
+      height: 10vh;
+    }
+
+    section {
+      position: relative;
+      top: 10px;
+      height: 90vh;
+      width: 100%;
+    }
+
+    .pi img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    .first {
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      left: 25%;
+    }
+
+    p {
+      font-style: normal;
+      text-align: justify;
+      text-indent: 20px;
+      color: rgb(22, 5, 255);
+    }
+
+    .first button {
+      padding: 10px 20px;
+      border-radius: 15px;
+      background: transparent;
+    }
+
+    button a {
+      color: red;
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: 15px;
+    }
+
+    button a:hover {
+      color: darkgreen;
+    }
+
+    .first h2 {
+      color: rgb(248, 211, 4);
+    }
+
+    main {
+      position: relative;
+      top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 20px;
+      width: 80%;
+      margin: auto;
+      background-color: rgb(243, 141, 234);
+
+    }
+
+    main div {
+      height: 300px;
+      width: 350px;
+      border: 3px solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 5px;
+      padding: 10px;
+      background-color: rgba(231, 217, 15, 0.644);
+    }
+
+    main img {
+      height: 100px;
+      width: 100px;
+    }
+
+    main h1 {
+      width: 100%;
+    }
+
+    h4 {
+      color: rgb(4, 80, 33);
+    }
+
+    main button {
+      background: transparent;
+      padding: 5px 10px;
+      border-radius: 15px;
+    }
+
+    aside {
+      position: relative;
+      height: 40vh;
+      width: 30%;
+      border: 2px solid red;
+      margin: auto;
+      top: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    aside img {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+    footer{
+      position: relative;
+      top: 40px;
+      height: 50px;
+      width: 100%;
+      background-color: grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    footer div{
+      font-weight: bold;
+      font-style: italic;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</li>
+      <li>About</li>
+      <li><i class="fa-solid fa-user" style="color: #ffffff;"></i> Login</li>
+      <li>Register</li>
+      <li><i class="fa-solid fa-phone" style="color: #fcfcfc;"></i> Contact</li>
+    </ul>
+  </nav>
+  <div class="em"></div>
+  <section>
+    <div class="pi"><img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaZ7HbBt2ehRk8-OX5Lzv0ExYV8Q6hu2tBtCDbyNFPz4YO2WuARii5oWVrSw&s"
+        alt="error" /></div>
+    <div class="first">
+      <h2>CSS Information</h2>
+      <p>
+        Cascading Style Sheets (CSS) is a style sheet language used for
+        specifying the presentation and styling of a document written in a
+        markup language such as HTML or XML (including XML dialects such as
+        SVG, MathML or XHTML).CSS is a cornerstone technology of the World
+        Wide Web, alongside HTML and JavaScript
+      </p>
+      <button><a href="https://en.wikipedia.org/wiki/CSS">know more</a></button>
+    </div>
+  </section>
+  <main>
+    <h1 style="font-size: 30px; text-align: center; text-transform: uppercase;">Nearest places to visit in Hyderabad
+    </h1>
+    <div class="c1">
+      <img src="./cha.jfif" alt="error">
+      <h4>Charminar</h4>
+      <p>Charminar is a monument and a mosque, which is synonymous with the history of Hyderabad, India. The Charminar's
+        long history includes the existence of a mosque on its top floor for more than 425 years.</p>
+      <h4>17°21′42″N 78°28′29″E</h4>
+      <button><a href="https://en.wikipedia.org/wiki/Charminar">know more</a></button>
+    </div>
+    <div class="c2">
+      <img src="./bill.jfif" alt="error">
+      <h4>Birla Mandir</h4>
+      <p>Birla Mandir is located towards the southern end of Hussain Sagar Lake in Hyderabad. It situated atop the Kala
+        Pahad which is a twin hillock of Naubat Pahad. The Birlas built the Hyderabad temple in 1976.</p>
+      <h4>17.4061875°N 78.4690625°E</h4>
+      <button><a href="https://en.wikipedia.org/wiki/Birla_Mandir,_Hyderabad">know more</a></button>
+    </div>
+    <div class="c3">
+      <img src="./goll.jfif" alt="error">
+      <h4>Golconda Fort</h4>
+      <p>Golconda Fort is located in the western part of Hyderabad city and is about 9 km from the Hussain Sagar Lake.
+        The outer fort occupies an area of three square kilometers, which is 4.8 kilometers in length.</p>
+      <h4>17°22′59″N 78°24′04″E</h4>
+      <button><a href="https://en.wikipedia.org/wiki/Golconda">know more</a></button>
+    </div>
+    <div class="c4">
+      <img src="./sagar.jfif" alt="error">
+      <h4>Hussain Sagar </h4>
+      <p>Hussain Sagar alternatively referred to as Tank Bund is a heart-shaped lake in Hyderabad, Telangana, India,
+        built by Ibrahim Quli Qutb Shah in 1563. It is spread across an area of 5.7 square kilometres (2.2 sq mi) and is
+        fed by the River Musi.</p>
+      <h4>17.42477°N 78.47332°E</h4>
+      <button><a href="https://en.wikipedia.org/wiki/Hussain_Sagar">know more</a></button>
+    </div>
+    <div class="c5">
+      <img src="./swami.jfif" alt="error">
+      <h4>Statue of Equality</h4>
+      <p>The Statue of Equality is a statue of the 11th-century Indian philosopher Ramanuja, located on the premises of
+        the Chinna Jeeyar Trust at Muchintal. It is the second tallest sitting statue in the world.</p>
+      <h4>17.1860°N 78.3332°E</h4>
+      <button><a href="https://en.wikipedia.org/wiki/Statue_of_Equality_%28Ramanuja%29">know more</a></button>
+    </div>
+    <div class="c6">
+      <img src="./ramo.jpg" alt="error">
+      <h4>Ramoji Film City</h4>
+      <p>Ramoji Film City is an integrated film studio facility located in Hyderabad, India. Spread over 1,666 acres
+        (674 ha), it holds the title of the largest film studio complex in the world, as certified by the Guinness World
+        Records.</p>
+      <h4>17.252°N 78.681°E</h4>
+      <button><a href="https://en.wikipedia.org/wiki/Ramoji_Film_City">know more</a></button>
+    </div>
+    <div class="c7">
+      <img src="./sila.webp" alt="error">
+      <h4>Shilparamam</h4>
+      <p>Shilparamam is an arts and crafts village located in Madhapur, Hyderabad, Telangana, India. Sprawling over 65
+        acres (260,000 m2) of land in the hi-tech hub city of India, Shilparamam gives a scenic ambience of tradition
+        and cultural heritage.</p>
+      <h4>17.451°N 78.377°E</h4>
+      <button><a href="https://en.wikipedia.org/wiki/Shilparamam">know more</a></button>
+    </div>
+  </main>
+  <aside>
+    <img src="./rev.jfif" alt="error">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam quo tempore assumenda repudiandae
+      sequi temporibus harum itaque repellat molestiae!</p>
+    <div class="stars">
+      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+    </div>
+  </aside>
+  <footer>
+    <div> &copycopyrights to owner</div>
+  </footer>
+</body>
+
+</html>
